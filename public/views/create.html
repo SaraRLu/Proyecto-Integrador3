@@ -1,0 +1,101 @@
+<section class="create">
+  <h1 class="Lula">Jugueteria Alta</h1><br>
+
+<section class="products-table"></section>
+
+
+
+
+<div class="container-create">
+    <h2>Datos Del Producto</h2>    
+<div class="form-create">
+    <img src="img/image-form-create.svg" alt="">
+            <form  id="form">
+                <h2>Formulario</h2>
+                <label for="nombre">Name:</label>
+                <input type="text" id="nombre"  required minlength="2" maxlength="70"> <br>
+
+                <label for="precio">Price:</label>
+                <input type="number" required id="precio" placeholder="$199.000"> <br>
+
+                <label for="stock">Stock:</label>
+                <input type="number" required id="stock" min="1" max="10" placeholder="Ej: 1-10"> <br>
+
+                <label for="categoria">Category:</label>
+                <select  id="categoria" required>
+                    <option value=" ">Select</option>
+                    <option value="1">Muñecas</option>
+                    <option value="2">Coches</option>
+                    <option value="3">Peluches</option>
+                    <option value="4">Cocinas</option>
+                    <option value="5">Barbies</option>
+                    <option value="6">Kit de veterinaria</option>
+                    <option value="7">Dinosaurios</option>
+                    <option value="8">Juegos de mesa</option>
+                    <option value="9">Juegos para bebes</option>
+                    <option value="10">Computadores didacticos</option>
+                </select> <br> <br>
+
+                <label for="brand">Brand</label>
+                <select name="brand" id="marca" required>
+                    <option value=" ">Select</option>
+                    <option value="1">Hot Wheels</option>
+                    <option value="2">Lego</option>
+                    <option value="3">Hasbro</option>
+                    <option value="4">Nenuco</option>
+                    <option value="5">Disney</option>
+                    <option value="6">Mattel</option>
+                    <option value="7">Fisher Price</option>
+                    <option value="8">Barbie</option>
+                    <option value="9">Nerf</option>
+                    <option value="10">Playskool</option>
+                </select>
+                
+                <br>
+                
+                <label for="descripcion-corta">Short-description:</label>
+                <textarea name="descripcion" id="descripcion-corta" cols="30" rows="10" required  minlength="10" maxlength="200"> </textarea> <br>
+
+                <label for="descripcion-larga">Long Description:</label>
+                <textarea  id="descripcion-larga"  cols="30" rows="10" maxlength="2000" minlength="10"></textarea> <br>
+                <div class="flex">
+
+                <div class="envio">
+                    <br><br>
+                    <label for="envio">Free-shoping</label>
+                    <input type="checkbox" id="envio" required>
+                </div>
+                
+                <div class="titles-edad">
+                    
+                    <div class="edad">
+                        <div class="pequeños">
+                        <h3 class="center">Age-from:</h3>
+                            <input type="number" min="0" max="100" required>
+                        </div>
+
+                        <div class="grandes">
+                            <h3 class="center">Age-up-to:</h3>
+                            <input type="number" min="0" max="100" required>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> <br> <br>
+
+            <label for="file">Cargar Foto:</label>
+            <input accept="image/*" type="file" required id="file">
+            
+            <input type="submit" id="btn" disabled value="Enviar Datos">
+        </form>
+    </div>
+</div>
+
+<section class="section-products-table">
+    <h2>Listado de productos</h2>
+    <div class="products-table-container">
+        <table id="cart-table">
+
+        </table>
+    </div>
+</section>

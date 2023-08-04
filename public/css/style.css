@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+body{
+    background-image: url('/img/fondoweb3_page-0001.jpg');
+    font-family: 'Outfit', sans-serif;
+    background-repeat: space;
+    /* background-size: cover; */
+    /* background-position: center center; */
+}
+
+/* menu */
+header{
+    display: flex; /*pone elementos horizontales uno al lado del otro*/
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7fc4ff;
+    
+    height: 160px;
+    padding: 15px;
+}
+
+header>img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.envio{
+   text-align: center;
+   display: flex;
+}
+/* cards container  */
+#cards{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.home-page{
+    text-align: center;
+}
+.home-page > h1{
+    font-size: 3.5rem;
+    color: #7fc4ff;
+    font-weight: bold;
+    text-shadow: 2px 3px 2px black;
+}
+/* Estilos de busqueda */
+.search-container {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.search-input {
+    padding-right: 30px;
+    width: 700px;
+    height: 30px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+/* products table create  */
+.products-table{
+    margin: 0 auto;
+}
+.create{
+    text-align: center;
+    margin: 0 auto;
+}
+#form{
+    width: 100%;
+}
+/* Estilos de cards */
+
+.container_principal{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 95%;
+    margin: 100px auto;
+}
+
+.container{
+    width: 300px;      /*ancho*/
+    height: 600px;      /*alto*/
+    margin: auto;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 200px;
+    text-align: center;
+    background-color: rgb(245, 248, 251);
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.container>img{
+    width: 230px;
+    height: 230px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+
+.container2{
+    padding-left: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.container3{
+    display: flex;
+
+
+}
+.div-1 h4{
+    color: rgb(60, 107, 176);
+}
+.div-2{
+    margin-left: 70px;
+}
+.div-2 h4{
+    color: #953599;
+}
+
+.container4{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(146, 146, 146, 0.117);
+    width: 248px;
+}
+
+.container2>button{
+    margin: 20px auto;
+    display: block;
+    width: 40%;
+    height: 45px;
+    padding: 5px;
+    opacity: 0;
+    border-radius: 6px;
+    background-color: #ffcd52;
+    /* color: #000000; */
+}
+
+.container2>button:hover{
+    transition: all .4s ease;
+    width: 45%;
+    cursor: pointer;
+}
+
+.container:hover{
+    transition: all .4s ease;
+    box-shadow: 0px 6px 8px 6px rgba(141, 141, 141, 0.41);
+}
+
+
+.container:hover .container2>button{
+    opacity: 1;
+    
+
+}
+
+form{
+    background-color:rgba(104, 106, 106, 0.18);
+    width: 45%;
+    margin: 10px  50px;
+    border-radius: 10px;
+    padding: 15px;
+    color: rgb(4, 4, 4);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+
+.caja{
+    background-image: url('../img/fondoweb1_page-0001.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    
+    
+
+}
+
+
+
+.Lula{
+    font-size: 45px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+.caja2 {
+    background-image: url('../img/fondoweb2_page-0001.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 90vh;
+}
+
+.contac {
+    font-size: 60px;
+    padding: 50px;
+    text-align: left;
+    color: rgb(10, 9, 9);
+    font-weight: bold;
+    margin:0px 280px auto;
+}
+
+.conta {
+    background-color: rgba(104, 106, 106, 0.18);
+    width: 38%;
+    height: 43%;
+    margin: 10px 130px auto;
+    border-radius: 10px;
+    padding: 60px;
+    color: rgb(12, 12, 12);
+    display: center;
+    flex-direction: column;
+    justify-content:center;
+}
+
+nav{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+nav>a{
+    text-decoration: none;
+    margin: 20px;
+    font-size: 1.5rem;
+    color: #020202;
+    font-weight: bold;
+}
+
+nav>a:hover{
+    font-size: 1.7rem;
+}
+
+nav>a:focus{
+    color: #5993ca;
+}
+
+nav>a:active{
+    color: #953599;
+}
+
+label{
+    font-size: 20px;
+}
+
+input{
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+#categoria{
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+#envio input{
+    width: 5%;
+    border: 2px solid #ff1a04;
+}
+
+#envio{
+    display: flex;
+    align-items: center;
+}
+
+#edad input{
+    width: 5%;
+    border: 2px solid #ff1a04;
+}
+
+#edad{
+    display: flex;
+    align-items: center;
+}
+
+
+select:focus {
+    background-color:rgba(154, 231, 244, 0.237);
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    background-color: rgba(154, 231, 244, 0.237);
+    outline: none;
+    border: 1px solid #ffffff;
+}
+
+textarea{
+    border-radius: 8px;
+    font-size: 8px;
+}
+
+
+/* CARRITO */
+
+.car{
+    box-shadow: inset 4px 6px 6px rgb(217, 217, 222);
+}
+
+.carri{
+    height: 40px;
+    width: 40px;
+    border-radius: 18px;
+}
+
+.carro{
+    border-radius: 50%;
+    height: 50px;
+    width: 60px;
+    background-color: #7fc4ff;
+    border-color: #7fc4ff;
+    
+}
+
+.cart-modal-container{
+    display: none;
+}
+
+.table img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+/* INFORMACION DEL CARRITO */
+
+.informacionVisible{
+    display: flow-root;
+    border: 3px solid rgb(96, 212, 247);
+    border-radius: 5px;
+    width: 35%;
+    background-color: #ffffff;
+    overflow-y: scroll;
+    box-shadow: 5px 8px 8px gray;
+}
+
+section p{
+    color: gray;
+    text-align: center;
+    font-family: monospace;
+}
+
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    color: gray;
+    margin: 18px;
+}
+
+th, td {
+    padding: 10px;
+}
+
+
+
+/* ACCORDION */
+
+:root{
+    --fondoh3: #8fbfec;
+    --hover: #9bd8f0;
+    --conten-background: #f8fafb;
+    --color-content: #000000;
+    --border-title: #b7e3ee;
+}
+
+
+.dion {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #b7e3ee;
+    color: #010101;
+}
+
+.accor{
+    font-size: 4em;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.accorde{
+    text-align: center;
+    font-size: 3em;
+    margin: 40px;  
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.accordion {
+    width: 50%;
+    margin: 60px auto;
+}
+
+.accordion-title {
+    padding: 0.5rem;
+    cursor: pointer;
+    border: 1px solid;
+    background-color: var(--fondoh3);
+    border-color: var(--border-title);
+}
+
+.accordion-title:hover {
+    background-color: var(--hover);
+}
+
+.accordion-content {
+    padding: 0.5rem;
+    display: none;
+    background-color: var(--conten-background);
+    color: var(--color-content);
+} 
+
+.accordion-title--open + .accordion-content{
+    height:100px;
+    padding: 30px;
+    display: block;
+}
+
+
+.footer-logo>img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+footer{
+    background-color: #7fc4ff;
+    padding: 15px;
+    height: 300px;
+}
+
+.info-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer ul>li{
+    list-style: none;
+}
+footer ul>li>a{
+    color: #4f4f4fc6;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+footer ul>li>a :hover{
+    font-size: 18px;
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .informacionVisible{
+        width: 75%;
+    }
+}
+
+/* Estilos para celular */
+@media screen and (max-width:768px) {
+    header{
+        flex-direction: column;
+        height: 235px;
+    }
+    nav{
+        width: 105%;
+    }
+    nav>a{
+        font-size: 20px;
+    }
+    nav>a:hover{
+        font-size: 23px;
+    }
+    
+    .container2>button{
+        opacity: 1;
+    }
+    footer{
+    padding: 0px;
+    }
+    .footer-logo{
+        justify-content: flex-start;
+        width: 100%;
+        font-size: 14px;
+    }
+    .caja{
+        background-size: 700px 700px;
+    }
+    form{
+        width: 60%;
+        margin: 30px 0;
+    }
+    .caja2{
+        background-size: 400px 450px;
+    }
+    .conta{
+        margin: 0px 0;
+        width: 47%;
+    }
+
+    .accordion{
+        width: 95%;
+    }
+
+    
+    .search-input {
+        padding-right: 30px;
+        width: 300px;
+        height: 30px;
+    }
+}
